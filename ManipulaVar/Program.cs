@@ -9,7 +9,10 @@ namespace ManipulaVar
             int x = int.Parse(args[0]);
             int incremento = x;
             incremento++;
+            int decremento = x;
+            --decremento;
             Console.WriteLine($"Incremento: {incremento}");
+            Console.WriteLine($"Decremento: {decremento}");
         }
     }
 }
