@@ -6,7 +6,10 @@ namespace ManipulaVar
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int x = int.Parse(args[0]);
+            int incremento = x;
+            incremento++;
+            Console.WriteLine($"Incremento: {incremento}");
         }
     }
 }
