@@ -18,6 +18,10 @@ namespace PerguntaValores
             int r = int.Parse(Console.ReadLine());
             Console.Write($"Insira uma altura: ");
             int a = int.Parse(Console.ReadLine());
+            
+            //Contas com os valores inseridos pelo utilizador
+            float V = π * (r * r) * a;
+            float Sa = 2 * π * r * (r + a);
 
 
 
