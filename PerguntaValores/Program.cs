@@ -23,6 +23,10 @@ namespace PerguntaValores
             float V = π * (r * r) * a;
             float Sa = 2 * π * r * (r + a);
 
+            //Mostra resultado ao utilizador
+            Console.WriteLine($"O volume do cilíndro é: " + V
+                        +"\nA área da superfície do cilindro é: " + Sa);
+
 
 
         }
