@@ -35,6 +35,15 @@ namespace Specials
             Console.WriteLine($"\n---DECIMAL---\nMáximo: {dec}\nMinímo: {de}");
 
 
+            double neg = double.NegativeInfinity;
+            double posit = double.PositiveInfinity;
+            float nanf = float.NaN;
+            double nand = double.PositiveInfinity/double.PositiveInfinity;
+            Console.WriteLine($"\n---ESPECIAIS---\nInfinito Negativo: {neg}"+
+                                $"\nInfinito Positivo: {posit}"+
+                                $"\nFloat NAN: {nanf}\nDouble NAN: {nand}");
+
+
 
         }
     }
