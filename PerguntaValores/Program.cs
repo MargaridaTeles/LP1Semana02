@@ -10,18 +10,17 @@ namespace PerguntaValores
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-
-            float π = 3.1415926f;
-
+            float pi = Convert.ToSingle(Math.PI);
             //Pedir medidas ao utilizador
             Console.Write($"Insira um número para o raio: ");
             int r = int.Parse(Console.ReadLine());
             Console.Write($"Insira uma altura: ");
             int a = int.Parse(Console.ReadLine());
-            
+
+            float r_quadrado = Convert.ToSingle(Math.Pow(r, 2));
             //Contas com os valores inseridos pelo utilizador
-            float V = π * (r * r) * a;
-            float Sa = 2 * π * r * (r + a);
+            float V = pi * r_quadrado * a;
+            float Sa = 2 * pi * r * (r + a);
 
             //Mostra resultado ao utilizador
             Console.WriteLine($"O volume do cilíndro é: " + V
