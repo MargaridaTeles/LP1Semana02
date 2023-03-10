@@ -13,9 +13,10 @@ namespace GranpaPatternSwitch
             Console.Write("Place your question? ");
             question = Console.ReadLine();
 
+            // Sintaxe switch por padrões
             // Verificar se se trata de uma questão conhecida e determinar uma
             // resposta adequada
-            string response = question switch
+            response = question switch
             {
                 "How are you?" => "I'm fine, thank you",
                 "What's your name?" => "Gran'pa",
