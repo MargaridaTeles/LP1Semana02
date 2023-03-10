@@ -21,6 +21,7 @@ namespace Specials
             int inte = int.MaxValue;
             int it = int.MinValue;
             Console.WriteLine($"\n---INT---\nMáximo: {inte}\nMinímo: {it}");
+            Console.WriteLine($"OverFlow: {(int) (inte+1)}");
 
             float flo = float.MaxValue;
             float fl = float.MinValue;
@@ -29,11 +30,14 @@ namespace Specials
             short sho = short.MaxValue;
             short sh = short.MinValue;            
             Console.WriteLine($"\n---SHORT---\nMáximo: {sho}\nMinímo: {sh}");
+            
+            char cha = char.MaxValue;
+            char ch = char.MinValue;
+            Console.WriteLine($"\n---CHAR---\nMáximo: {cha}\nMinímo: {ch}");
 
             decimal dec = decimal.MaxValue;
             decimal de = decimal.MinValue;
             Console.WriteLine($"\n---DECIMAL---\nMáximo: {dec}\nMinímo: {de}");
-
 
             double neg = double.NegativeInfinity;
             double posit = double.PositiveInfinity;
