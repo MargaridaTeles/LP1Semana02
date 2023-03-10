@@ -13,6 +13,8 @@ namespace Specials
             double doub = double.MaxValue;
             double db = double.MinValue;
             Console.WriteLine($"\n---DOUBLE---\nMáximo: {doub}\nMinímo: {db}");
+            Console.WriteLine($"OverFlow: {doub = double.MaxValue+1}"+
+                                $" ou {doub = 2 * double.MaxValue}");
 
             ulong ulo = ulong.MaxValue;
             ulong ul = ulong.MinValue;
@@ -26,6 +28,8 @@ namespace Specials
             float flo = float.MaxValue;
             float fl = float.MinValue;
             Console.WriteLine($"\n---FLOAT---\nMáximo: {flo}\nMinímo: {fl}");
+            Console.WriteLine($"OverFlow: {flo = float.MaxValue+1}"+
+                                $" ou {flo = 2 * float.MaxValue}");
 
             short sho = short.MaxValue;
             short sh = short.MinValue;            
