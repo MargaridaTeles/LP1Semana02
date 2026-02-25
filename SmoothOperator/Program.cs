@@ -7,7 +7,12 @@ namespace SmoothOperator
         private static void Main(string[] args)
         {
             Console.Write("Insira um número inteiro: ");
-            int num = int.Parse(Console.ReadLine());
+            string input = Console.ReadLine();
+
+            sbyte n = Convert.ToSByte(input);
+
+            Console.WriteLine($"Operação de decremento: {--n}");
+            Console.WriteLine($"Operação de incremento: {++n}");
         }
     }
 }
