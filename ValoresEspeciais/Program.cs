@@ -35,6 +35,10 @@ namespace ValoresEspeciais
             Console.WriteLine($"Valor overflow * 2f: {f*2f}");
             Console.WriteLine($"Valor overflow + 1e38f: {f + + 1e38f}");
 
+            float f1 = 10000.0f;
+            float f2 = 10000.0f;
+            Console.WriteLine($"Valor underflow de float: {f1 == f2 + 0.0001f}");
+
         }
     }
 }
