@@ -10,6 +10,10 @@ namespace Cilindro
             int a = int.Parse(Console.ReadLine());
             Console.Write("Insira o raio do cilindro: ");
             int r = int.Parse(Console.ReadLine());
+
+            double volume = MathF.PI * MathF.Pow(r, 2) * a;
+            double area = 2 * MathF.PI * r * (r + a);
+
         }
     }
 }
