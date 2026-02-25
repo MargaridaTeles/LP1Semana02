@@ -6,7 +6,8 @@ namespace SmoothOperator
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP!");
+            Console.Write("Insira um número inteiro: ");
+            int num = int.Parse(Console.ReadLine());
         }
     }
 }
