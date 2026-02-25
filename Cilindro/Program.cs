@@ -14,6 +14,8 @@ namespace Cilindro
             double volume = MathF.PI * MathF.Pow(r, 2) * a;
             double area = 2 * MathF.PI * r * (r + a);
 
+            Console.WriteLine($"Volume do cilindro: {volume:f3}");
+            Console.WriteLine($"Área de superfície do cilindro: {area:f3}");
         }
     }
 }
