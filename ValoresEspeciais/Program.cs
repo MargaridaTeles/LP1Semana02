@@ -17,6 +17,15 @@ namespace ValoresEspeciais
             Console.WriteLine($"float: Min = {float.MinValue}, Max = {float.MaxValue}");
             Console.WriteLine($"double: Min = {double.MinValue}, Max = {double.MaxValue}");
             Console.WriteLine($"decimal: Min = {decimal.MinValue}, Max = {decimal.MaxValue}");
+
+            Console.WriteLine($"\nFloat: +Infinity = {float.PositiveInfinity}");
+            Console.WriteLine($"Float: -Infinity = {float.NegativeInfinity}");
+            Console.WriteLine($"Float: NaN = {float.NaN}");
+
+            Console.WriteLine($"\nDouble: +Infinity = {double.PositiveInfinity}");
+            Console.WriteLine($"Double: -Infinity = {double.NegativeInfinity}");
+            Console.WriteLine($"Double: NaN = {double.NaN}");
+
         }
     }
 }
