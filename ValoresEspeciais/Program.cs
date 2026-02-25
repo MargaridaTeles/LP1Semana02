@@ -30,6 +30,11 @@ namespace ValoresEspeciais
             Console.WriteLine($"\nValor inicial uint: {u}");
             Console.WriteLine($"Valor overflow em uint: {++u}");
 
+            float f = float.MaxValue;
+            Console.WriteLine($"\nValor inicial float: {f}");
+            Console.WriteLine($"Valor overflow * 2f: {f*2f}");
+            Console.WriteLine($"Valor overflow + 1e38f: {f + + 1e38f}");
+
         }
     }
 }
