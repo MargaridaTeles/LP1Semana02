@@ -6,7 +6,8 @@ namespace TempConvert
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello LP!");
+            Console.Write("Insira um temperatura: ");
+            string input = Console.ReadLine();
         }
     }
 }
