@@ -10,37 +10,23 @@ namespace TempConvert
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
 
             Console.Write("Temperature: ");
-            string input = Console.ReadLine();
+            double input = double.Parse(Console.ReadLine());
             Console.Write("Unit (C/F): ");
             string unidade = Console.ReadLine();
 
-            double fahrenheit, celsius;
-
+            // F = C * 1.8 + 32        C = (F - 32) / 1.8
             switch (unidade)
             {
                 case "F":
-                    celsius = double.Parse(input);
-                    fahrenheit = celsius * 1.8 + 32;
-                    Console.WriteLine($"{fahrenheit:f2} F = {celsius:f2} C");
-                    break;
-
-                case "f":
-                    celsius = double.Parse(input);
-                    fahrenheit = celsius * 1.8 + 32;
-                    Console.WriteLine($"{fahrenheit:f2} F = {celsius:f2} C");
+                    double fahrenheit = input * 1.8 + 32;
+                    Console.WriteLine($"{fahrenheit:f2} F = {input:f2} C");
+                    Console.WriteLine($"Absolute value: {Math.Abs(input):f2}");
                     break;
 
                 case "C":
-                    fahrenheit = double.Parse(input);
-                    celsius = (fahrenheit - 32) / 1.8;                    
-                    Console.WriteLine($"{celsius:f2} C = {fahrenheit:f2} F");
-                    break;
-
-                case "c":
-                    fahrenheit = double.Parse(input);
-                    celsius = (fahrenheit - 32) / 1.8;                   
-                    Console.WriteLine($"{celsius:f2} C = {fahrenheit:f2} F");
-                    //Math.Abs()
+                    double celsius = (input - 32) / 1.8;                    
+                    Console.WriteLine($"{celsius:f2} C = {input:f2} F");
+                    Console.WriteLine($"Absolute value: {Math.Abs(input):f2}");
                     break;
 
                 default:
